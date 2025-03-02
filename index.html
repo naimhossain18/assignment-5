@@ -13,7 +13,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css">
   </head>
-  <body class="bg-[#F4F7FF]">
+  <body class="bg-[#F4F7FF] min-h-svh">
     <header class=" lg:w-9/12  mx-auto">
       <nav class="flex justify-between items-center bg-white rounded-xl p-4">
         <div
@@ -31,8 +31,8 @@
             <img class="w-6" src="./assets/checkbox.png" alt="" />
             <span id="check-box-num" class="text-2xl font-bold">23</span>
           </div>
-          <div class="bg-[#F4F7FF] w-16 rounded-full">
-            <img class="p-3 " src="./assets/theme-btn.png" alt="" />
+          <div  id="theme-btn" class="bg-[#F4F7FF] w-16 cursor-pointer rounded-full">
+           <button onclick="changeColor ()" > <img class="p-3 " src="./assets/theme-btn.png" alt="" /></button>
           </div>
         </div>
       </nav>
@@ -42,7 +42,7 @@
       -->
     <main class=" lg:w-9/12 mx-auto mt-4">
       <section>
-        <div class="parent-div  rounded-lg  grid grid-cols-6 gap-4  ">
+        <div class="parent-div  rounded-lg  grid grid-cols-1 lg:grid-cols-6 gap-4  ">
           <div class="left-side-section bg-white col-span-5 p-4 rounded-lg">
             <div class="left-side-top-section  flex flex-col lg:flex-row justify-between gap-4 pb-4 border-b border-dashed ">
 
@@ -55,7 +55,7 @@
                 </div>
                 <div>
                   <p class="text-xs text-slate-600 m-0">Task Assigned</p>
-                  <span id="task-number" class="font-bold m-0">6</span>
+                  <span id="task-number" class="font-bold m-0 text-base">6</span>
                 </div>
               </div>
 
@@ -67,7 +67,7 @@
                   <img class="w-10 " src="./assets/board.png" alt="" />
                 </div>
                 <div>
-                  <p class="text-sm m-0 text-white">
+                  <p class="text-base m-0 text-white">
                     Discover Something <br />
                     New Today!
                   </p>
@@ -81,15 +81,15 @@
                   <img class="p-3" src="./assets/calender.png" alt="" />
                 </div>
                 <div>
-                  <p class="text-xs text-slate-600 m-0">Fri,</p>
-                  <span class="font-bold m-0"> Feb 28 2025</span>
+                  <p id="top-day" class="text-xs text-slate-600 m-0">Fri,</p>
+                  <span id="top-date" class="font-bold m-0"> Feb 28 2025</span>
                 </div>
               </div>
 
             </div>
 
             <!-- bottom-/card -->
-            <div class="card-parent grid grid-cols-3 gap-4 mt-3">
+            <div class="card-parent grid  grid-cols-1 lg:grid-cols-3 gap-4 mt-3">
 
               
               <!-- 1st card -->
@@ -98,8 +98,8 @@
                   <div class="border-b pb-2 border-dashed">
 
                     <h3 class="card-sub-title text-xs m-0 bg-white rounded-lg w-20 text-center text-slate-700 p-1"> ShopEase</h3>
-                    <h2 class="card-title text-lg my-2 ">Fix Mobile Button Issue </h2>
-                    <p class="card-des text-sm bg-white h-[92px] p-3 rounded-lg text-slate-500">Debug using Chrome <br><span>DevTools, check for overlapping elements, and ensure onClick works properly
+                    <h2 class="card-title text-2xl my-2 ">Fix Mobile Button Issue </h2>
+                    <p class="card-des text-base bg-white h-[92px] p-3 rounded-lg text-slate-500">Debug using Chrome <br><span>DevTools, check for overlapping elements, and ensure onClick works properly
                       and ensure onClick works properly</span> </p>
                   </div>
 
@@ -107,10 +107,10 @@
 
                       <div class="deadline">
                         <span class="text-xs m-0">Deadline</span> <br>
-                        <span class="text-xs m-0 font-medium">21 March 2025</span>
+                        <span class="text-base m-0 font-medium">21 March 2025</span>
                       </div>
                     <div class="card-actions justify-end">
-                      <button class=" completed-btn btn text-sm btn-primary">Completed</button>
+                      <button class=" completed-btn btn text-base btn-primary">Completed</button>
                     </div>
                     </div>
 
@@ -123,18 +123,18 @@
                   <div class="border-b pb-2 border-dashed">
 
                     <h3 class="card-sub-title text-xs m-0 bg-white rounded-lg w-20 text-center text-slate-700 p-1"> CloudSync</h3>
-                    <h2 class="card-title text-xl my-2 ">Add Dark Mode</h2>
-                    <p class="card-des text-sm bg-white h-[92px] p-3 rounded-lg text-slate-500">Store the user's preference in <br><span>localStorage, update CSS variables dynamically, and apply a smooth transition effect.</span> </p>
+                    <h2 class="card-title text-2xl my-2 ">Add Dark Mode</h2>
+                    <p class="card-des text-base bg-white h-[92px] p-3 rounded-lg text-slate-500">Store the user's preference in <br><span>localStorage, update CSS variables dynamically, and apply a smooth transition effect.</span> </p>
                   </div>
 
                     <div class="flex justify-between items-center pt-2 ">
 
                       <div class="deadline">
                         <span class="text-xs m-0">Deadline</span> <br>
-                        <span class="text-xs m-0 font-medium">21 March 2025</span>
+                        <span class="text-base m-0 font-medium">21 March 2025</span>
                       </div>
                     <div class="card-actions justify-end">
-                      <button class=" completed-btn btn text-sm btn-primary">Completed</button>
+                      <button class=" completed-btn btn text-base btn-primary">Completed</button>
                     </div>
                     </div>
 
@@ -147,18 +147,18 @@
                   <div class="border-b pb-2 border-dashed">
 
                     <h3 class="card-sub-title text-xs m-0 bg-white rounded-lg w-20 text-center text-slate-700 p-1"> SwiftPay</h3>
-                    <h2 class="card-title text-xl my-2 ">Optimize  Home page </h2>
-                    <p class="card-des text-sm bg-white h-[92px] p-3 rounded-lg text-slate-500">Landing page optimization is <br><span>the process of improving web page design and layout with the goal of increasing conversions, elevating the user experience (UX), and turning more visitors into loyal customers.</span> </p>
+                    <h2 class="card-title text-2xl my-2 ">Optimize  Home page </h2>
+                    <p class="card-des text-base bg-white h-[92px] p-3 rounded-lg text-slate-500">Landing page optimization is <br><span>the process of improving web page design and layout with the goal of increasing conversions, elevating the user experience (UX), and turning more visitors into loyal customers.</span> </p>
                   </div>
 
                     <div class="flex justify-between items-center pt-2 ">
 
                       <div class="deadline">
                         <span class="text-xs m-0">Deadline</span> <br>
-                        <span class="text-xs m-0 font-medium">21 March 2025</span>
+                        <span class="text-base m-0 font-medium">21 March 2025</span>
                       </div>
                     <div class="card-actions justify-end">
-                      <button class=" completed-btn btn text-sm btn-primary">Completed</button>
+                      <button class=" completed-btn btn text-base btn-primary">Completed</button>
                     </div>
                     </div>
 
@@ -171,18 +171,18 @@
                   <div class="border-b pb-2 border-dashed">
 
                     <h3 class="card-sub-title text-xs m-0 bg-white rounded-lg w-20 text-center text-slate-700 p-1"> Meta</h3>
-                    <h2 class="card-title text-xl my-2 ">Add new emoji 🤲 </h2>
-                    <p class="card-des text-sm bg-white h-[92px] p-3 rounded-lg text-slate-500">You can add new emojis to <br><span>Google Messages, Google Chat, Slack, and the iPhone keyboard. </span> </p>
+                    <h2 class="card-title text-2xl my-2 ">Add new emoji 🤲 </h2>
+                    <p class="card-destext-base bg-white h-[92px] p-3 rounded-lg text-slate-500">You can add new emojis to <br><span>Google Messages, Google Chat, Slack, and the iPhone keyboard. </span> </p>
                   </div>
 
                     <div class="flex justify-between items-center pt-2 ">
 
                       <div class="deadline">
                         <span class="text-xs m-0">Deadline</span> <br>
-                        <span class="text-xs m-0 font-medium">21 March 2025</span>
+                        <span class="text-base m-0 font-medium">21 March 2025</span>
                       </div>
                     <div class="card-actions justify-end">
-                      <button class=" completed-btn btn text-sm btn-primary">Completed</button>
+                      <button class=" completed-btn btn text-base btn-primary">Completed</button>
                     </div>
                     </div>
 
@@ -195,18 +195,18 @@
                   <div class="border-b pb-2 border-dashed">
 
                     <h3 class="card-sub-title text-xs m-0 bg-white rounded-lg w-20 text-center text-slate-700 p-1">Google LLC</h3>
-                    <h2 class="card-title text-xl my-2 ">Integrate OpenAI API  </h2>
-                    <p class="card-des text-sm bg-white h-[92px] p-3 rounded-lg text-slate-500">You can now request access <br><span>in order to integrate the API into your product, develop an entirely new application, or help us explore the ...</span> </p>
+                    <h2 class="card-title text-2xl my-2 ">Integrate OpenAI API  </h2>
+                    <p class="card-des text-base bg-white h-[92px] p-3 rounded-lg text-slate-500">You can now request access <br><span>in order to integrate the API into your product, develop an entirely new application, or help us explore the ...</span> </p>
                   </div>
 
                     <div class="flex justify-between items-center pt-2 ">
 
                       <div class="deadline">
                         <span class="text-xs m-0">Deadline</span> <br>
-                        <span class="text-xs m-0 font-medium">21 March 2025</span>
+                        <span class="text-base m-0 font-medium">21 March 2025</span>
                       </div>
                     <div class="card-actions justify-end">
-                      <button class=" completed-btn btn text-sm btn-primary">Completed</button>
+                      <button class=" completed-btn btn text-base btn-primary">Completed</button>
                     </div>
                     </div>
 
@@ -219,18 +219,18 @@
                   <div class="border-b pb-2 border-dashed">
 
                     <h3 class="card-sub-title text-xs m-0 bg-white rounded-lg w-20 text-center text-slate-700 p-1">Glassdoar</h3>
-                    <h2 class="card-title text-xl my-2 ">Improve Job searching  </h2>
-                    <p class="card-des text-sm bg-white h-[92px] p-3 rounded-lg text-slate-500">You can improve your <br><span>job search by optimizing your resume, networking, and planning your job search. </span> </p>
+                    <h2 class="card-title text-2xl my-2 ">Improve Job searching  </h2>
+                    <p class="card-des text-base bg-white h-[92px] p-3 rounded-lg text-slate-500">You can improve your <br><span>job search by optimizing your resume, networking, and planning your job search. </span> </p>
                   </div>
 
                     <div class="flex justify-between items-center pt-2 ">
 
                       <div class="deadline">
                         <span class="text-xs m-0">Deadline</span> <br>
-                        <span class="text-xs m-0 font-medium">21 March 2025</span>
+                        <span class="text-base m-0 font-medium">21 March 2025</span>
                       </div>
                     <div class="card-actions justify-end">
-                      <button class=" completed-btn btn text-sm btn-primary">Completed</button>
+                      <button class=" completed-btn btn text-base btn-primary">Completed</button>
                     </div>
                     </div>
 
@@ -244,15 +244,20 @@
 
           <!-- clear history -->
           <div class="clear-history-section col-span-1 flex items-center justify-start flex-col  bg-white rounded-lg p-4"> 
-            <div class=" inline-flex gap-1 mb-2"><img src="./assets/activity.png" alt="">
-                <p class="font-semibold text-sm">Activity Log</p>
+            <div class="text-center  border-b border-dashed pb-4">
+
+            
+            <div class=" inline-flex gap-2 mb-2"><img src="./assets/activity.png" alt="">
+                <p class="font-semibold text-base">Activity Log</p>
             </div>
-            <div id="clear-btn" class="btn w-32 bg-[#3752FD] text-white font-semibold"> <button>Clear History</button></div>
-            <div id="notification"> </div>
+            <div id="clear-btn" class="btn w-32 bg-[#3752FD]  text-white font-semibold "> <button>Clear History</button></div>
+          </div>
+            <div id="notification" class="text-sm rounded-lg px-2 py-4 "> </div>
           </div>
         </div>
       </section>
     </main>
     <script src="./dev.js"></script>
+    <script src="./utility.js"></script>
   </body>
 </html>
