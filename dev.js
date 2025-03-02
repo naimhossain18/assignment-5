@@ -45,7 +45,7 @@ const clearHistoryBtn = document.getElementById("clear-btn").addEventListener("c
 document.getElementById("discover-btn").addEventListener("click", function(){
     window.location.href= "./index2.html";
 })
-// 
+// time and date
 const topDate = document.getElementById("top-date");
 const topDay = document.getElementById("top-day");
 const dateString = new Date().toDateString();
