@@ -13,7 +13,7 @@
 </head>
 <body class="bg-[#F4F7FF]">
     <header class=" lg:w-9/12  mx-auto">
-        <nav class="flex justify-between items-center bg-white rounded-xl p-4">
+        <nav class="flex justify-between shadow-lg items-center bg-white rounded-xl p-4">
           <div
             class="nav-left-side flex flex-row gap-3 items-center justify-center"
           >
@@ -27,6 +27,58 @@
           </div>
         </nav>
       </header>
+      <main class=" lg:w-9/12 mx-auto mt-4">
+        <h1 class="font-bold my-4 text-2xl text-center">Blogs</h1>
+        <section>
+            <!-- q-1 -->
+             <div class="parent bg-white mb-4 p-4">
+                <h3 class="font-bold pb-4  border-b border-dashed">Question-1: What are the different ways to select an element in the DOM?</h3>
+                <p class="font-bold ">Answer:</p>
+                <ul>
+                    <li>getElementById("")</li>
+                    <li>getElementsByClassName("")</li>
+                    <li>getElementsByTagName("")</li>
+                    <li>querySelector("")</li>
+                    <li>querySelectorAll("")</li>
+                </ul>
+             </div>
+             <!-- q-2 -->
+             <div class="parent bg-white mb-4 p-4">
+                <h3 class="font-bold pb-4  border-b border-dashed">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+                <p class="font-bold ">Answer:</p>
+                <p><span class="font-bold">inner text: </span>innerText returns the visible text contained in a node,</p>
+                <p><span class="font-bold">inner html: </span>innerHTML is a JavaScript property that allows you to get or set the HTML content inside an element.</p>
+                <p><span class="font-bold">text content: </span>ext content" refers to the plain text within an HTML element, including all its child elements, essentially capturing all the visible text within a specific part of a web page, regardless of any formatting or styling applied to it</p>
+               
+             </div>
+             <div class="parent bg-white mb-4 p-4">
+                <h3 class="font-bold pb-4  border-b border-dashed">Question-3: What is event delegation in the DOM</h3>
+                <p class="font-bold ">Answer:</p>
+                <p class="">Event Delegation is a JavaScript technique that attach a single event listener to a parent element, which listens for events on its child elements using event bubbling.</p>
+                
+               
+             </div>
+             <div class="parent bg-white mb-4 p-4">
+                <h3 class="font-bold pb-4  border-b border-dashed">Question-4: What is event bubbling in the DOM?</h3>
+                <p class="font-bold ">Answer:</p>
+                <p> class="">Bubbling in the DOM is an event propagation method. It starts with an event triggering on the innermost element and then proceeds to trigger the same event on its parent element and then its parent's parent element and so on.</p>
+                
+               
+             </div>
+             <div class="parent bg-white mb-4 p-4">
+                <h3 class="font-bold pb-4  border-b border-dashed">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+                <p class="font-bold ">Answer:</p>
+                <p>
+                    <li>document.createElement(),</li> <span>const completedNotification = document.createElement("p");</span>
+                    <li>appendChild(),</li> <span>notification.appendChild(completedNotification);</span>
+                    <li>remove</li> <span> .parentNode.removeChild();</span>
+                </p>
+                
+               
+             </div>
+        </section>
+
+      </main>
     
       
     <script src="./blogs.js"></script>
